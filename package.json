@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/WebHeroSchool/buildProject1/issues"
   },
-  "homepage": "https://github.com/WebHeroSchool/buildProject1#readme"
+  "homepage": "https://github.com/WebHeroSchool/buildProject1#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
