@@ -1,10 +1,16 @@
 const gulp = require('gulp');
+const babel = require('gulp-babel');
 
-let now = new Date();
-gulp.task('hello', () => console.log(now));
+// let now = new Date();
+// gulp.task('hello', () => console.log(now));
 
 gulp.task('buildjs', () => {
-	return gulp.src(['scripts/*'])
+	return gulp.src(['scripts/*.js'])
+		.pipe(console.log())
+		.pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(console.log())
 		.pipe(gulp.dest('build/js'));
 });
 

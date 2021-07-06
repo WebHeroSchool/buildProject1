@@ -1,1 +1,2 @@
-script.js
+const = a;
+console.log(a);
